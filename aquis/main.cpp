@@ -6,10 +6,13 @@
 //  Copyright © 2017 Constantin Dullo. All rights reserved.
 //
 
-#include <iostream>
+#include "mainwindow.h"
+#include <QApplication>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main(int argc, char * argv[]) {
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    
+    return a.exec();
 }
