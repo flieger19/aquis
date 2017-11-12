@@ -31,6 +31,19 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void on_pathTemplate_returnPressed();
+
+    void on_selectTamplate_clicked();
+
+    void on_backwarts_clicked();
+
+    void on_forward_clicked();
+
+    void on_pathQuestionaire_returnPressed();
+
+    void on_selectQuestionaire_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

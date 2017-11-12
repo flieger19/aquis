@@ -32,3 +32,33 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_pathTemplate_returnPressed()
+{
+
+}
+
+void MainWindow::on_selectTamplate_clicked()
+{
+
+}
+
+void MainWindow::on_backwarts_clicked()
+{
+
+}
+
+void MainWindow::on_forward_clicked()
+{
+
+}
+
+void MainWindow::on_pathQuestionaire_returnPressed()
+{
+
+}
+
+void MainWindow::on_selectQuestionaire_clicked()
+{
+
+}
