@@ -197,6 +197,7 @@ aquis.xcodeproj/project.pbxproj: aquis.pro /usr/local/Cellar/qt/5.9.1/mkspecs/ma
 		aquis.pro \
 		resources/resource.qrc \
 		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/QtWidgets.prl \
+		/usr/local/Cellar/qt/5.9.1/lib/QtMacExtras.framework/QtMacExtras.prl \
 		/usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/QtGui.prl \
 		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/QtCore.prl
 	$(QMAKE) -o aquis.xcodeproj/project.pbxproj aquis.pro -spec macx-xcode
@@ -388,6 +389,7 @@ aquis.xcodeproj/project.pbxproj: aquis.pro /usr/local/Cellar/qt/5.9.1/mkspecs/ma
 aquis.pro:
 resources/resource.qrc:
 /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/QtWidgets.prl:
+/usr/local/Cellar/qt/5.9.1/lib/QtMacExtras.framework/QtMacExtras.prl:
 /usr/local/Cellar/qt/5.9.1/lib/QtGui.framework/QtGui.prl:
 /usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/QtCore.prl:
 qmake: FORCE

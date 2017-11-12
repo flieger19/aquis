@@ -9,7 +9,15 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+// qt
 #include <QMainWindow>
+
+#ifdef __APPLE__ || __MACH__
+    #include <QtMacExtras>
+#endif
+
+// cv
+#include <opencv/highgui.h>
 
 namespace Ui {
 class MainWindow;

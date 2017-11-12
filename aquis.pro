@@ -22,27 +22,46 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-VPATH += \
-        aquis \
-        resources
-
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp
+    aquis/main.cpp \
+    aquis/mainwindow.cpp \
+    aquis/questionaire.cpp \
+    aquis/processing.cpp \
+    aquis/template.cpp \
+    aquis/checkbox.cpp \
+    aquis/textfield.cpp \
+    aquis/preferences.cpp \
+    aquis/variables.cpp \
+    aquis/about.cpp \
+    aquis/splashscreen.cpp
 
 HEADERS += \
-        mainwindow.h
+    aquis/mainwindow.h \
+    aquis/aquisinfo.h \
+    aquis/questionaire.h \
+    aquis/processing.h \
+    aquis/template.h \
+    aquis/checkbox.h \
+    aquis/textfield.h \
+    aquis/preferences.h \
+    aquis/variables.h \
+    aquis/about.h \
+    aquis/splashscreen.h
 
 FORMS += \
-        mainwindow.ui
+    aquis/mainwindow.ui \
+    aquis/preferences.ui \
+    aquis/variables.ui \
+    aquis/about.ui
 
 RESOURCES += \
-        resource.qrc
+    resources/resource.qrc
 
 win32 {
     RC_ICONS = resources/favicon.ico
 }
 mac {
+    QT += macextras
     ICON = resources/AppIcon.icns
     LIBS += -L/usr/local/opt/opencv@2/lib
 }

@@ -13,7 +13,19 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    // setup view
     ui->setupUi(this);
+    #ifdef __APPLE__ || __MACH__
+        // special setup vor MacOS
+    #endif
+    
+    // Create an OpenCV image.
+    cv::Mat image(320, 240, CV_8UC3, cvScalar(0,0,0));
+    
+    // Convert it to QImage
+    QImage qImage = QImage((const unsigned char*)(image.data),
+                           image.cols,image.rows,
+                           QImage::Format_RGB888).rgbSwapped();
 }
 
 MainWindow::~MainWindow()
