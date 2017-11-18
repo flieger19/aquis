@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>701</width>
+    <width>772</width>
     <height>608</height>
    </rect>
   </property>
@@ -14,152 +14,125 @@
    <string>aquis</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="horizontalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>681</width>
-      <height>521</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="mainLayout">
-     <property name="sizeConstraint">
-      <enum>QLayout::SetDefaultConstraint</enum>
-     </property>
-     <item>
-      <widget class="QGroupBox" name="groupTemplate">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="title">
-        <string>Template</string>
-       </property>
-       <widget class="QLineEdit" name="pathTemplate">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>30</y>
-          <width>241</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="selectTamplate">
-        <property name="geometry">
-         <rect>
-          <x>270</x>
-          <y>30</y>
-          <width>51</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Select</string>
-        </property>
-       </widget>
-       <widget class="QFrame" name="frameTamplate">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>70</y>
-          <width>312</width>
-          <height>441</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-       </widget>
-      </widget>
-     </item>
-     <item>
-      <widget class="QGroupBox" name="groupQuetionaire">
-       <property name="title">
-        <string>Questionaire</string>
-       </property>
-       <widget class="QPushButton" name="selectQuestionaire">
-        <property name="geometry">
-         <rect>
-          <x>270</x>
-          <y>30</y>
-          <width>51</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Select</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="pathQuestionaire">
-        <property name="geometry">
-         <rect>
-          <x>80</x>
-          <y>30</y>
-          <width>171</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="backwarts">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>30</y>
-          <width>21</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>B</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="forward">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>30</y>
-          <width>21</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>F</string>
-        </property>
-       </widget>
-       <widget class="QFrame" name="frameQuestionaire">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>70</y>
-          <width>312</width>
-          <height>441</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-       </widget>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupTemplate">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title">
+       <string>Template</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="pathTemplate"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="selectTamplate">
+         <property name="text">
+          <string>Select</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QFrame" name="frameTamplate">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="templateImage">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupQuetionaire">
+      <property name="title">
+       <string>Questionaire</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="backwarts">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../resources/resource.qrc">
+           <normaloff>:/Pictures/backwarts.png</normaloff>:/Pictures/backwarts.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="forward">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../resources/resource.qrc">
+           <normaloff>:/Pictures/forwarts.png</normaloff>:/Pictures/forwarts.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="pathQuestionaire"/>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="selectQuestionaire">
+         <property name="text">
+          <string>Select</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="4">
+        <widget class="QFrame" name="frameQuestionaire">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="questionarImage">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>701</width>
+     <width>772</width>
      <height>22</height>
     </rect>
    </property>
@@ -307,6 +280,8 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="../resources/resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

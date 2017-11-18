@@ -1,5 +1,7 @@
 <RCC>
-    <qresource prefix="Pictures">
+    <qresource prefix="/Pictures">
         <file>Plus.png</file>
+        <file>backwarts.png</file>
+        <file>forwarts.png</file>
     </qresource>
 </RCC>

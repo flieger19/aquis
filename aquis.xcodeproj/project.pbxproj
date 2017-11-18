@@ -69,8 +69,8 @@
 		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
 		9887B6B23D47BC46EC7E11C1 /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 29CD04F802630A54ABBFAE7F /* QtGui.framework */; };
 		9946CD697D439AF0B0C6EC58 /* opencv_surface_matching in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C1361CB7FB00762BA39FBBE4 /* opencv_surface_matching */; };
-		9E7E876E1FB8B93300AB7E84 /* AppIcon.icns in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 81B9D4773BB5DEC3D26AC8FD /* AppIcon.icns */; };
 		9E863C052C4005EF31E103B2 /* mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 9C8334B0A42721443ABB15C4 /* mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		9E96E6171FC088920051E72A /* AppIcon.icns in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 81B9D4773BB5DEC3D26AC8FD /* AppIcon.icns */; };
 		A3F183835743E05172280246 /* opencv_reg in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2273B0FE394862905B0EE3DD /* opencv_reg */; };
 		A85FA5F1F3C3C95022CCA94C /* opencv_superres in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 162FAEE31E6A142DCC5F345E /* opencv_superres */; };
 		A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */; };
@@ -102,7 +102,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9E7E876D1FB8B92100AB7E84 /* PBXContainerItemProxy */ = {
+		9E96E6161FC088860051E72A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
 			proxyType = 1;
@@ -167,7 +167,7 @@
 		6A25B476630DBD08009395F7 /* opencv_features2d */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_features2d; path = "/usr/local/opt/opencv@2/lib/libopencv_features2d.dylib"; sourceTree = "<absolute>"; };
 		6D5C1D23469F6A869645D7C9 /* ui_variables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_variables.h; path = /Users/constantindullo/Documents/aquis/ui_variables.h; sourceTree = "<absolute>"; };
 		6E717B9385D83F7307E9921F /* opencv_rgbd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_rgbd; path = /usr/local/lib/libopencv_rgbd.dylib; sourceTree = "<absolute>"; };
-		7744AFEED63C5AA9D25BA967 /* mainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = text; name = mainwindow.ui; path = /Users/constantindullo/Documents/aquis/aquis/mainwindow.ui; sourceTree = "<absolute>"; };
+		7744AFEED63C5AA9D25BA967 /* mainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = mainwindow.ui; path = /Users/constantindullo/Documents/aquis/aquis/mainwindow.ui; sourceTree = "<absolute>"; };
 		7A5514C0DB3E1B2CE2F6FD09 /* aquis.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = aquis.pro; path = /Users/constantindullo/Documents/aquis/aquis.pro; sourceTree = "<absolute>"; };
 		7B1C5C46576D18F3C00DCFBA /* aquis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aquis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2802140A331351ED363DB4 /* opencv_dnn */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = opencv_dnn; path = /usr/local/lib/libopencv_dnn.dylib; sourceTree = "<absolute>"; };
@@ -566,7 +566,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E7E876E1FB8B93300AB7E84 /* AppIcon.icns in Copy Bundle Resources */,
+				9E96E6171FC088920051E72A /* AppIcon.icns in Copy Bundle Resources */,
 			);
 			name = "Copy Bundle Resources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,7 +633,7 @@
 		421B97B1EB067A89B3798940 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A34AE64B63F1F70FE59B315D /* Qt Preprocess */;
-			targetProxy = 9E7E876D1FB8B92100AB7E84 /* PBXContainerItemProxy */;
+			targetProxy = 9E96E6161FC088860051E72A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

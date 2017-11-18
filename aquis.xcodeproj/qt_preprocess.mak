@@ -39,6 +39,8 @@ compiler_rcc_clean:
 	-$(DEL_FILE) qrc_resource.cpp
 qrc_resource.cpp: resources/resource.qrc \
 		/usr/local/Cellar/qt/5.9.1/bin/rcc \
+		resources/forwarts.png \
+		resources/backwarts.png \
 		resources/Plus.png
 	/usr/local/Cellar/qt/5.9.1/bin/rcc -name resource resources/resource.qrc -o qrc_resource.cpp
 
@@ -52,6 +54,8 @@ compiler_moc_header_make_all: moc_mainwindow.cpp moc_questionaire.cpp moc_proces
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_mainwindow.cpp moc_questionaire.cpp moc_processing.cpp moc_template.cpp moc_preferences.cpp moc_variables.cpp moc_about.cpp
 moc_mainwindow.cpp: /usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QMainWindow \
+		/usr/local/Cellar/qt/5.9.1/lib/QtWidgets.framework/Headers/QFileDialog \
+		/usr/local/Cellar/qt/5.9.1/lib/QtCore.framework/Headers/QDir \
 		/usr/local/Cellar/qt/5.9.1/lib/QtMacExtras.framework/Headers/QtMacExtras \
 		/usr/local/include/opencv/highgui.h \
 		aquis/mainwindow.h \

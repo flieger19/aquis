@@ -11,6 +11,8 @@
 
 // qt
 #include <QMainWindow>
+#include <QFileDialog>
+#include <QDir>
 
 #ifdef __APPLE__ || __MACH__
     #include <QtMacExtras>
@@ -18,6 +20,8 @@
 
 // cv
 #include <opencv/highgui.h>
+
+#include <iostream>
 
 namespace Ui {
 class MainWindow;
